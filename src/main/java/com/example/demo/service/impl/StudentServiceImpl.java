@@ -62,6 +62,7 @@ public class StudentServiceImpl implements StudentService {
         .flatMap(repository::findByNim)
         .doOnNext(student -> student.setGender(request.getGender()))
         .doOnNext(student -> student.setName(request.getName()))
+        .flatMap(repository::save)
         .switchIfEmpty(Mono.error(new RuntimeException("NIM tidak ditemukan")));
   }
 
