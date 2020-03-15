@@ -94,14 +94,14 @@ public class StudentServiceImpl implements StudentService {
   private Mono<Integer> validateSemester(Integer semester) {
     return Mono.just(semester)
         // validate score here
-        // send error if score isnot
+        // send error if semester is invalid
         ;
   }
 
   private Mono<Double> validateScore(Double score) {
     return Mono.just(score)
         // validate score here
-        // send error if score isnot
+        // send error if score is invalid
         ;
   }
 
