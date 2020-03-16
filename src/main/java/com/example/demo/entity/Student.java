@@ -10,11 +10,10 @@ import java.util.List;
 
 @Data
 @Builder
-@Document(collection = "Student")
+@Document(collection = "student")
 public class Student {
 
   @Id
-  @Field(value = "id")
   private String id;
 
   @Field(value = "nim")

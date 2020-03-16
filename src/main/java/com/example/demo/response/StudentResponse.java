@@ -16,7 +16,6 @@ import java.util.List;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class StudentResponse {
 
-  private String id;
   private String nim;
   private String name;
   private String gender;
