@@ -8,7 +8,6 @@ import com.example.demo.response.StudentResponse;
 public class ResponseHelper {
   public static StudentResponse convertToStudentResponse(Student student) {
     return StudentResponse.builder()
-        .id(student.getId())
         .nim(student.getNim())
         .name(student.getName())
         .gender(student.getGender())
